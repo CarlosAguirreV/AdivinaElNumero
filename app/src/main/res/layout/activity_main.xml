@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_gato1"
+        android:drawableEnd="@drawable/ic_gato1"
+        android:fontFamily="@font/avdira"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/tituloLandscape"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorNegro"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblSubTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTitulo"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/avdira"
+        android:text="@string/subtitulo"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lyInfo"
+        android:layout_below="@+id/lblSubTitulo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <SeekBar
+                    android:id="@+id/sldCantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="2"
+                    android:progress="2" />
+
+                <TextView
+                    android:id="@+id/lblCantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/avdira"
+                    android:text="@string/text_defecto"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnJugar"
+                style="@style/Botones"
+                android:drawableStart="@drawable/ic_videogame"
+                android:text="@string/btn_jugar" />
+
+            <Button
+                android:id="@+id/btnInstrucciones"
+                style="@style/Botones"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_library"
+                android:text="@string/btn_instrucciones" />
+
+            <Button
+                android:id="@+id/btnAcercaDe"
+                style="@style/Botones"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_spa"
+                android:text="@string/btn_acerca" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                style="@style/Botones"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_exit"
+                android:text="@string/btn_salir" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGrisClaro"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/imagen"
+            android:src="@drawable/ic_info"
+            android:tint="@color/colorGrisOscuro" />
+
+        <TextView
+            android:id="@+id/lblInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/avdira"
+            android:gravity="center"
+            android:text="@string/text_defecto"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

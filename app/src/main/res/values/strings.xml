@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Adivina el número</string>
+    <string name="titulo">¡Adivina \nel número!</string>
+    <string name="tituloLandscape">¡Adivina el número!</string>
+    <string name="subtitulo">¿Te atreves con el reto?</string>
+    <string name="imagenGato">Imagen gato</string>
+
+    <string name="imagen">IMAGEN</string>
+    <string name="text_defecto">...</string>
+
+    <string name="titulo_instrucciones">Instrucciones</string>
+    <string name="titulo_historial">Historial</string>
+    <string name="btn_codigo">Ver codigo fuente</string>
+    <string name="btn_volver">Volver</string>
+    <string name="btn_jugar">Jugar</string>
+    <string name="btn_instrucciones">Instrucciones</string>
+    <string name="btn_acerca">Acerca de</string>
+    <string name="btn_salir">Salir</string>
+    <string name="numero">Número</string>
+    <string name="comprobar">Comprobar</string>
+    <string name="rendirse">Rendirse</string>
+    <string name="jugar_de_nuevo">Jugar de nuevo</string>
+
+
+    <string name="no_historial">No tienes historial de números</string>
+    <string name="acerca_de">
+        Sobre el desarrollador\n
+        &#8211; Juego programado por Carlos Aguirre (CodigoBase)\n\n
+        Recursos externos\n
+        &#8211; Fuente de texto Avdira\n\n
+        Sobre la aplicación\n
+        &#8211; Versión 10-03-2020\n
+        &#8211; Versión de Android Studio 3.6.1\n
+        &#8211; Lenguaje de programación Kotlin\n
+        &#8211; Número de horas empleadas 17\n\n
+        ¡Muchas gracias por usar esta aplicación!
+    </string>
+    <string name="instrucciones">
+        El juego consiste en averiguar cuál es el número oculto.\n\n
+        El valor que puede ir en cada posición va de 0 a 9 y estos no pueden repetirse. Los números pueden empezar en 0. Por ejemplo 0163.\n\n
+        Una vez hayas introducido un número, pulsa en el botón Comprobar. Este comparará el número oculto con tu número. A continuación un mensaje te avisará de los números acertados y los posibles, o bien te indicará que has acertado todo el número.\n
+        &#8211; Los acertados son aquellos que coinciden tanto en posición como en valor.\n
+        &#8211; Los posibles son aquellos que se encuentran en el número oculto pero que no están en su posición correcta.\n\n
+        En todo momento podrás revisar la lista con aquellos números que hayas comprobado. Para ello toca sobre el botón con forma de reloj.\n\n
+        ¡Mucha suerte y ánimo!
+    </string>
+
+
+</resources>
