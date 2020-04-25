@@ -6,7 +6,7 @@
     <string name="imagenGato">Imagen gato</string>
 
     <string name="imagen">IMAGEN</string>
-    <string name="text_defecto">...</string>
+    <string name="text_defecto">&#8239;</string>
 
     <string name="titulo_instrucciones">Instrucciones</string>
     <string name="titulo_historial">Historial</string>
@@ -25,11 +25,11 @@
     <string name="no_historial">No tienes historial de números</string>
     <string name="acerca_de">
         Sobre el desarrollador\n
-        &#8211; Juego programado por Carlos Aguirre (CodigoBase)\n\n
+        &#8211; Juego programado por Carlos Aguirre\n\n
         Recursos externos\n
         &#8211; Fuente de texto Avdira\n\n
         Sobre la aplicación\n
-        &#8211; Versión 10-03-2020\n
+        &#8211; Versión 11-04-2020\n
         &#8211; Versión de Android Studio 3.6.1\n
         &#8211; Lenguaje de programación Kotlin\n
         &#8211; Número de horas empleadas 17\n\n

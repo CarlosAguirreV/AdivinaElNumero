@@ -1,6 +1,7 @@
 package com.codigobase.adivinaelnumero
 
-import android.opengl.Visibility
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -30,7 +31,16 @@ class InformacionActivity : AppCompatActivity() {
             lblInformacion.text = getString(R.string.instrucciones)
         }
 
+        // Evento del boton codigo
+        btnCodigo.setOnClickListener { mostrarWeb() }
+
         // Evento del boton volver
-        btnVolver.setOnClickListener(View.OnClickListener { finish() })
+        btnVolver.setOnClickListener { finish() }
+    }
+
+    private fun mostrarWeb() {
+        val paginaWeb = "https://github.com/CarlosAguirreV/AdivinaElNumero"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(paginaWeb))
+        startActivity(intent)
     }
 }

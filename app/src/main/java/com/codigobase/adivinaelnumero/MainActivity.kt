@@ -1,7 +1,6 @@
 package com.codigobase.adivinaelnumero
 
 import android.content.Intent
-import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import android.widget.SeekBar
@@ -11,6 +10,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // En cuanto cargue esperar un poco y quitar el Splash Screen
+        Thread.sleep(100)
+        setTheme(R.style.AppTheme)
+
+        // Del onCreate
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
