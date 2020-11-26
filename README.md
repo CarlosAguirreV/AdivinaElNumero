@@ -3,8 +3,8 @@ Juego en el que tienes que adivinar un número.</br>
 El valor que puede ir en cada posición va de 0 a 9 y estos no pueden repetirse. Los números pueden empezar en 0. Por ejemplo 0163.</br>
 Una vez hayas introducido un número, pulsa en el botón Comprobar. Este comparará el número oculto con tu número. A continuación un mensaje te avisará de los números acertados y los posibles, o bien te indicará que has acertado todo el número.</br>
 * Los acertados son aquellos que coinciden tanto en posición como en valor.
-* Los posibles son aquellos que se encuentran en el número oculto pero que no están en su posición correcta.</br>
-En todo momento podrás revisar la lista con aquellos números que hayas comprobado. Para ello toca sobre el botón con forma de reloj.
+* Los posibles son aquellos que se encuentran en el número oculto pero que no están en su posición correcta.
+* En todo momento podrás revisar la lista con aquellos números que hayas comprobado. Para ello toca sobre el botón con forma de reloj.
 
 ## 🛠️ Pre-requisitos
 Para poder usar esta aplicación es necesario disponer de un dispositivo móvil con Android instalado.
