@@ -1,10 +1,11 @@
-package com.codigobase.adivinaelnumero
+package com.codigobase.adivinaelnumero.controlador
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.codigobase.adivinaelnumero.R
 import kotlinx.android.synthetic.main.activity_informacion.*
 
 class InformacionActivity : AppCompatActivity() {
@@ -26,6 +27,7 @@ class InformacionActivity : AppCompatActivity() {
             lblTitulo.text = getString(R.string.btn_acerca)
             lblInformacion.text = getString(R.string.acerca_de)
             btnCodigo.visibility = View.VISIBLE
+            imgLogo.visibility = View.VISIBLE
         } else {
             lblTitulo.text = getString(R.string.btn_instrucciones)
             lblInformacion.text = getString(R.string.instrucciones)

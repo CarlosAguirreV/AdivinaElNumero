@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".InformacionActivity"
+            android:name=".controlador.InformacionActivity"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".RegistrosActivity"
+            android:name=".controlador.RegistrosActivity"
             android:screenOrientation="fullSensor" android:configChanges="screenSize|orientation" />
         <activity
-            android:name=".GameActivity"
+            android:name=".controlador.GameActivity"
             android:screenOrientation="fullSensor" android:configChanges="screenSize|orientation" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controlador.MainActivity"
             android:screenOrientation="fullSensor"
             android:theme="@style/SplashTheme">
             <intent-filter>

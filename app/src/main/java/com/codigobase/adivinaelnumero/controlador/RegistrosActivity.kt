@@ -1,9 +1,11 @@
-package com.codigobase.adivinaelnumero
+package com.codigobase.adivinaelnumero.controlador
 
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import com.codigobase.adivinaelnumero.R
+import com.codigobase.adivinaelnumero.modelo.Registro
 import kotlinx.android.synthetic.main.activity_registros.*
 
 class RegistrosActivity : AppCompatActivity() {

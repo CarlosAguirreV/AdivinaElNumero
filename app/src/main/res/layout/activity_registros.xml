@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorHistorial"
-    tools:context=".RegistrosActivity">
+    tools:context=".controlador.RegistrosActivity">
 
     <TextView
         android:id="@+id/lblTitulo"

@@ -1,10 +1,11 @@
-package com.codigobase.adivinaelnumero
+package com.codigobase.adivinaelnumero.controlador
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
+import com.codigobase.adivinaelnumero.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +23,9 @@ class MainActivity : AppCompatActivity() {
         super.getSupportActionBar()?.hide()
 
         // Definir el texto de informacion inferior y el texto asociado a la barra
-        lblInfo.text = "Selecciona un valor de 2 a 4 y pulsa Jugar."
-        lblCantidad.text = "${sldCantidad.getProgress() + 2} Números"
+        lblInfo.text = getString(R.string.seleccionaValor)
+        val cadena = "${sldCantidad.getProgress() + 2} " + getString(R.string.numeros)
+        lblCantidad.text = cadena
 
         // Eventos que se ejecutaran
         eventos()
@@ -42,7 +44,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun eventos() {
-
         // Al cambiar el valor de la barra deslizadora
         sldCantidad.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
@@ -71,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     private fun mostrarJuego() {
         val intent =
             Intent(this, GameActivity::class.java).apply {
-                putExtra("cantidad", sldCantidad.getProgress() + 2)
+                putExtra("cantidad", sldCantidad.progress + 2)
             }
         startActivity(intent)
     }

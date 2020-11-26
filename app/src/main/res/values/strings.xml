@@ -4,6 +4,8 @@
     <string name="tituloLandscape">¡Adivina el número!</string>
     <string name="subtitulo">¿Te atreves con el reto?</string>
     <string name="imagenGato">Imagen gato</string>
+    <string name="seleccionaValor">Selecciona un valor de 2 a 4 y pulsa Jugar.</string>
+    <string name="numeros">Números</string>
 
     <string name="imagen">IMAGEN</string>
     <string name="text_defecto">&#8239;</string>
@@ -29,8 +31,8 @@
         Recursos externos\n
         &#8211; Fuente de texto Avdira\n\n
         Sobre la aplicación\n
-        &#8211; Versión 11-04-2020\n
-        &#8211; Versión de Android Studio 3.6.1\n
+        &#8211; Versión 31-07-2020\n
+        &#8211; Versión de Android Studio 4.0\n
         &#8211; Lenguaje de programación Kotlin\n
         &#8211; Número de horas empleadas 17\n\n
         ¡Muchas gracias por usar esta aplicación!

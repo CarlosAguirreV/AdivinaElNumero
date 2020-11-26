@@ -1,4 +1,4 @@
-package com.codigobase.adivinaelnumero
+package com.codigobase.adivinaelnumero.modelo
 
 import java.io.Serializable
 

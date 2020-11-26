@@ -1,4 +1,4 @@
-package com.codigobase.adivinaelnumero
+package com.codigobase.adivinaelnumero.controlador
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.text.InputFilter
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.codigobase.adivinaelnumero.R
+import com.codigobase.adivinaelnumero.modelo.Registro
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlin.random.Random
 
@@ -112,7 +114,13 @@ class GameActivity : AppCompatActivity() {
                 if (aciertos == cantidadNumeros) {
                     hasGanado()
                 } else {
-                    listaRegistros.add(Registro(cadenaNumeroIntroducido, aciertos, posibles))
+                    listaRegistros.add(
+                        Registro(
+                            cadenaNumeroIntroducido,
+                            aciertos,
+                            posibles
+                        )
+                    )
                     mostrarMensajePista(getCadena("acierto", aciertos, posibles))
                     mostrarMensajeToast(getCadena("aciertoToast", aciertos, posibles))
                 }
